@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
+/* Reseta os estilos */
 *{
     margin: 0%;
     padding: 0%;
@@ -8,10 +9,12 @@
     list-style: none;
 }
 
+/* Define a fonte padrão */
 body{
     font-family: "Lexend", sans-serif;
 }
 
+/* Cores e variáveis */
 :root{
     --yellow: #ffd027;
     --sf-yyellow: #f3d977;
@@ -24,6 +27,7 @@ body{
 
 }
 
+/* Backgrounds */
 .background-amarelo{
     background-color: var(--yellow);
 }
@@ -150,6 +154,23 @@ main .container{
     gap: 20px;
 }
 
+.mensagem-confirmacao {
+    padding: 25px 0px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadein 0.4s ease-in-out;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
 /*form inputs*/
 
 #input-container{
@@ -189,7 +210,7 @@ main .container{
     outline: 2px solid var(--yellow); 
 }
 
-/*radio buttons*/
+/*radio buttons para seleção de genero*/
 
 .radio-container{
     display: flex;
@@ -371,6 +392,7 @@ main .container{
     border-radius: 10px;
 }
 
+/* Overlay, tela de sobreposição dos itens */
 .em-breve-overlay {
     position: absolute;
     top: 0;
@@ -384,7 +406,7 @@ main .container{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    z-index: 10;
+    z-index: 10;  
 }
 
 .em-breve-texto h2 {
@@ -476,11 +498,11 @@ footer .container ul li a{
     color: var(--blaack);
 }
 
-/*responsivo*/
+/*Responsividade a diferentes tamanhos de tela*/
 @media(max-width: 960px){
     .menu-icon{
         display: block;
-        z-index: 11;
+        z-index: 11; /*Para que o menu icon fique acima do overlay */
     }
     .ul{
         align-items: center;
@@ -493,7 +515,8 @@ footer .container ul li a{
         transition: 0.5s;
         flex-direction: column;
         justify-content: center;
-        z-index: 11;
+        z-index: 11; /*Para que o menu fique acima do overlay */
+
     }
     .ul li{
         margin: 20px 0;
