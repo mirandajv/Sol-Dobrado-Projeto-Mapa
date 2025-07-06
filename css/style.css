@@ -562,6 +562,19 @@ footer .container ul li a{
     main .container .main-text h1{
         font-size: 3rem;
     }
+
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container ul{
+        width: 100%;
+        text-align: center;
+    }
+    footer .container ul li{
+        margin: 10px 0;
+    }
+    
     .resultados .data-lançamento{
         flex-direction: column;
     }
