@@ -480,6 +480,7 @@ footer .container ul li a{
 @media(max-width: 960px){
     .menu-icon{
         display: block;
+        z-index: 11;
     }
     .ul{
         align-items: center;
@@ -492,6 +493,7 @@ footer .container ul li a{
         transition: 0.5s;
         flex-direction: column;
         justify-content: center;
+        z-index: 11;
     }
     .ul li{
         margin: 20px 0;
