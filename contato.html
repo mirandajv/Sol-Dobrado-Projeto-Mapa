@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PROJETOMAPA</title>
+</head>
+<body>
+    <div class="background-amarelo">
+        <header class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">SOLDOBRADO</a>
+                </div>
+                <ul class="ul">
+                    <li> <a href="index.html">INICIO</a></li>
+                    <li> <a href="sobre.html">SOBRE</a></li>
+                    <li> <a href="produtos.html">PRODUTOS</a></li>
+                    <li> <a href="contato.html">CONTATO</a></li>
+                    <li> <a href="#"> <button class="btn-gradient"> Comprar </button></a></li>
+                </ul>
+                <div class="menu-icon">
+                        <img src="img/menu.png" alt="Icone de menu">
+                </div>
+            </nav>
+
+        </header>
+    </div>
+    <div id="formulario" class="background-azul">
+        <main id="form-container">
+            <div id="form-header">
+                <h1 id="form-title">Seja um dos primeiros a dobrar sua luz</h1>
+                <p id="form-subtitle">Preencha o formulário abaixo para ficar por dentro do lançamento e ganhe um brinde exclusivo!</p>
+            </div>
+            <form action="" id="form">
+                <div id="input-container">
+                    <div class="input-box">
+                        <label for="name" class="form-label">Nome</label>
+                        <div class="input-field">
+                            <input type="text"
+                                name="name"
+                                id="name" 
+                                class="form-control" 
+                                placeholder="Digite seu nome"
+                                required>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="last-name" class="form-label">Sobrenome</label>
+                        <div class="input-field">
+                            <input type="text"
+                                name="last-name"
+                                id="last-name" 
+                                class="form-control" 
+                                placeholder="Digite seu sobrenome"
+                                required>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-box">
+                        <label for="birthdate" class="form-label">Data de nascimento</label>
+                        <div class="input-field">
+                            <input type="date"
+                                name="birthdate"
+                                id="birthdate" 
+                                class="form-control">
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-box">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-field">
+                            <input type="email"
+                                name="email"
+                                id="email" 
+                                class="form-control" 
+                                placeholder="exemplo@email.com"
+                                required>
+                        </div>
+                        <span class="error"></span>                
+                    </div>
+                    </div>
+                    <div class="radio-container">
+                        <label class="form-label"> Gênero </label>
+
+                        <div id="gender-inputs">
+                            <div class="radio-box">
+                                <input type="radio"
+                                        name="gender"
+                                        id="female"
+                                        class="form-control"
+                                        value="female">
+                            <label for="female" class="form-label">Feminino</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio"
+                                        name="gender"
+                                        id="male"
+                                        class="form-control"
+                                        value="male">
+                                <label for="male" class="form-label">Masculino</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio"
+                                        name="gender"
+                                        id="other"
+                                        class="form-control"
+                                        value="other">
+                                <label for="other" class="form-label">Outro</label>
+                            </div>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                        <button class="btn-gradient" type="submit">Inscrever-me</button>
+                </div>
+            </form>           
+                
+
+
+        </main>
+    </div>
+    <!--final do background!-->
+    </div>
+    <footer>
+        <div class="container">
+            <!--Redes sociais!-->
+            <ul>
+                <h3>SOLDOBRADO</h3>
+                <p>Todos os direitos reservados ©</p>
+                <div class="redes-sociais">
+                    <img src="img/instagram.png" alt="Instagram">
+                    <img src="img/facebook.png" alt="Facebook">
+                    <img src="img/twitter.png" alt="Twitter">
+                    <img src="img/linkedin.png" alt="YouTube">
+
+                </div>
+           </ul>
+           <!--menu!-->
+           <ul>
+                <h3>Menu</h3>
+                <li> <a href="index.html">INICIO</a></li>
+                <li> <a href="sobre.html">SOBRE</a></li>
+                <li> <a href="dobras.html">PRODUTOS</a></li>
+                <li> <a href="contato.html">CONTATO</a></li>
+           </ul>
+            <!--suporte!-->
+            <ul>
+                <h3>Suporte</h3>
+                    <li> <a href="#">POLÍTICA DE DEVOLUÇÃO</a></li>
+                    <li> <a href="#">POLÍTICA DE PRIVACIDADE</a></li>
+                    <li> <a href="#">TERMOS DE USO</a></li>
+                    <li> <a href="#">FAQ</a></li>
+            </ul>
+            <!--contato!-->
+           <ul>
+                <h3>Contato</h3>
+                <li> <a href="#">Email: soldobrado@mail.com</a></li>
+                <li> <a href="#">Telefone: (11) 1234-5678</a></li>
+                <li> <a href="#">Endereço: Rua Exemplo, 123, Belo Horizonte, MG</a></li>  
+           </ul>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
